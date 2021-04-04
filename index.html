@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MyQuiz Game</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script src="p5.play.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyD4wuK7x_cTa4jbcuMiIEe8vvTH1gPcxRk",
+    authDomain: "project-37-78040.firebaseapp.com",
+    databaseURL: "https://project-37-78040-default-rtdb.firebaseio.com",
+    projectId: "project-37-78040",
+    storageBucket: "project-37-78040.appspot.com",
+    messagingSenderId: "250797616017",
+    appId: "1:250797616017:web:f536bed56985da4ce4c830"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+  </head>
+  <body>
+    <form id="Form">
+      <h1>My Quiz Game</h1>
+      <input value="" type="text" placeholder="Your Name" id="input1" required>
+      <input type="button" id="submit">
+      <h2 id="greeting"></h2>
+      <h2 id="waiting"></h2>
+      <p id="text">Submit</p>
+    </form>
+    <div id="questions">
+    <h2 id="question">Q. Who is the current President of India?</h2>
+      <h2 id="optA">A. Ram Nath Kovind</h2>
+      <h2 id="optB">B. Dr. Rajendra Prasad</h2>
+      <h2 id="optC">C. Narendra Modi</h2>
+      <h2 id="optD">D. Amit Shah</h2>
+      <p id="a">Choose</p>
+      <p id="b">Choose</p>
+      <p id="c">Choose</p>
+      <p id="d">Choose</p>
+      <input type="button" id="choose1">
+      <input type="button" id="choose2">
+      <input type="button" id="choose3">
+      <input type="button" id="choose4">
+      </div>
+
+      <script src="sketch.js"></script>
+  </body>
+</html>
+
